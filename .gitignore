@@ -1,0 +1,7 @@
+# Zone identifier files (Windows WSL artifact)
+*.Zone.Identifier
+*.Identifier
+
+# OS
+.DS_Store
+Thumbs.db

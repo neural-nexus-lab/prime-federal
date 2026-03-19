@@ -16,7 +16,7 @@
     />
     <link rel="stylesheet" href="css/prime.css" />
   </head>
-  <body data-page="federal">
+  <body data-page="federal" data-content-section="federal_solutions">
     <div class="header-stripe"></div>
     <header class="site-header" id="top">
       <div class="shell header-row">
@@ -57,20 +57,20 @@
         <div class="hero-grid-bg"></div>
         <div class="shell hero-inner">
           <div class="hero-copy">
-            <div class="eyebrow" style="background:rgba(255,255,255,0.1); color:rgba(255,255,255,0.85);">
+            <div class="eyebrow" style="background:rgba(255,255,255,0.1); color:rgba(255,255,255,0.85);" data-content-text="eyebrow">
               Federal Mission · Compliance-Ready · SDVOSB
             </div>
-            <h1>Built for the<br/><em>Federal</em> Mission.</h1>
-            <p>
+            <h1 data-content-html="hero_heading">Built for the<br/><em>Federal</em> Mission.</h1>
+            <p data-content-text="body">
               PRIME delivers AI, cloud, and software solutions where mission and compliance meet. We are SBA-certified SDVOSB, aligned to FedRAMP, CMMC, FISMA, NIST 800-53, Section 508, and DoW AI Principles. From DoW and VA to DHS, civilian agencies, and the IC — we build and certify systems that earn trust at the infrastructure and agent level.
             </p>
 
             <div class="hero-cta">
-              <a class="button button-red" href="contact.html">Request AI Readiness Assessment</a>
-              <a class="button" style="background:rgba(255,255,255,0.1); border-color:rgba(255,255,255,0.2); color:#fff;" href="trustedai/index.html">Trusted AI Manifesto</a>
+              <a class="button button-red" href="contact.html" data-content-text="cta_primary">Request AI Readiness Assessment</a>
+              <a class="button" style="background:rgba(255,255,255,0.1); border-color:rgba(255,255,255,0.2); color:#fff;" href="trustedai/index.html" data-content-text="cta_secondary">Trusted AI Manifesto</a>
             </div>
 
-            <div class="hero-proof">
+            <div class="hero-proof" data-content-list="proof_items" data-content-item-class="proof-item" data-content-item-tag="div">
               <div class="proof-item">FedRAMP Aligned</div>
               <div class="proof-item">CMMC</div>
               <div class="proof-item">FISMA · NIST 800-53</div>
@@ -282,6 +282,7 @@
       </div>
     </footer>
 
+    <script src="/js/site-content.js"></script>
     <script>
       (function() {
         var header = document.querySelector(".site-header");

@@ -16,7 +16,7 @@
     />
     <link rel="stylesheet" href="css/prime.css" />
   </head>
-  <body data-page="contact">
+  <body data-page="contact" data-content-section="contact">
     <div class="header-stripe"></div>
     <header class="site-header" id="top">
       <div class="shell header-row">
@@ -55,14 +55,14 @@
     <main>
       <div class="page-hero page-hero--tight page-hero--tight-top">
         <div class="shell">
-          <div class="eyebrow">Get in Touch</div>
-          <h1>Reach Out When Your Team Is Ready.</h1>
-          <p>
+          <div class="eyebrow" data-content-text="eyebrow">Get in Touch</div>
+          <h1 data-content-text="hero_heading">Reach Out When Your Team Is Ready.</h1>
+          <p data-content-text="body">
             We are Veteran-owned, mission-minded, and solution-ready. Whether you need a 3-minute AI readiness assessment, a partnership conversation, or a general inquiry — we're here. Send it. We are ready to serve.
           </p>
           <div class="hero-cta" style="margin-top:1.25rem;">
-            <a class="button button-primary" href="mailto:hpadilla@primefederalsolutions.com?subject=AI%20Readiness%20Assessment">Request Assessment</a>
-            <a class="button button-ghost" href="mailto:hpadilla@primefederalsolutions.com">Email PRIME</a>
+            <a class="button button-primary" href="mailto:hpadilla@primefederalsolutions.com?subject=AI%20Readiness%20Assessment" data-content-text="cta_primary" data-content-mailto="email" data-mailto-subject="AI Readiness Assessment">Request Assessment</a>
+            <a class="button button-ghost" href="mailto:hpadilla@primefederalsolutions.com" data-content-text="cta_secondary" data-content-mailto="email">Email PRIME</a>
           </div>
         </div>
       </div>
@@ -124,7 +124,7 @@
               </div>
               <div class="info-row">
                 <strong>Email</strong>
-                <a href="mailto:hpadilla@primefederalsolutions.com">hpadilla@primefederalsolutions.com</a>
+                <a href="mailto:hpadilla@primefederalsolutions.com" data-content-text="email" data-content-mailto="email">hpadilla@primefederalsolutions.com</a>
               </div>
               <div class="info-row">
                 <strong>Veteran Status</strong>
@@ -178,6 +178,7 @@
       </div>
     </footer>
 
+    <script src="/js/site-content.js"></script>
     <script>
       (function() {
         var header = document.querySelector(".site-header");

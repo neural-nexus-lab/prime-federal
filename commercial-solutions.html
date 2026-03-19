@@ -16,7 +16,7 @@
     />
     <link rel="stylesheet" href="css/prime.css" />
   </head>
-  <body data-page="commercial">
+  <body data-page="commercial" data-content-section="commercial_solutions">
     <div class="header-stripe"></div>
     <header class="site-header" id="top">
       <div class="shell header-row">
@@ -55,26 +55,26 @@
     <main>
       <div class="page-hero page-hero--tight-top">
         <div class="shell">
-          <div class="eyebrow eyebrow-red">The GenAI ROI Problem</div>
-          <h1>Most Organizations Still Aren't Ready for AI. We Help Fix That.</h1>
-          <p>
+          <div class="eyebrow eyebrow-red" data-content-text="eyebrow">The GenAI ROI Problem</div>
+          <h1 data-content-text="hero_heading">Most Organizations Still Aren't Ready for AI. We Help Fix That.</h1>
+          <p data-content-text="body">
             Cisco found that only 13% of organizations say they are fully ready to capture AI's potential. PRIME has been delivering AI solutions since 2020 — before the hype cycle. We focus on operational readiness, measurable outcomes, and systems that work in the real world.
           </p>
           <div class="hero-cta" style="margin-top:1.5rem;">
-            <a class="button button-red" href="contact.html">Free AI Readiness Assessment</a>
-            <a class="button button-ghost" href="#how">How We Deliver ROI</a>
+            <a class="button button-red" href="contact.html" data-content-text="cta_primary">Free AI Readiness Assessment</a>
+            <a class="button button-ghost" href="#how" data-content-text="cta_secondary">How We Deliver ROI</a>
           </div>
         </div>
       </div>
 
       <div class="alert-banner">
         <div class="shell alert-inner">
-          <span class="alert-tag">Research</span>
+          <span class="alert-tag" data-content-text="alert_tag">Research</span>
           <p class="alert-text">
-            <strong>"Only 13% say they are fully ready to capture AI's potential."</strong>
-            <cite> — Cisco, AI Readiness Index 2024</cite>
+            <strong data-content-text="alert_quote">"Only 13% say they are fully ready to capture AI's potential."</strong>
+            <cite data-content-text="alert_cite"> — Cisco, AI Readiness Index 2024</cite>
             <br />
-            We've been helping organizations close that readiness gap since 2020. Let us earn your trust, and we'll deliver outcomes that matter.
+            <span data-content-text="alert_body">We've been helping organizations close that readiness gap since 2020. Let us earn your trust, and we'll deliver outcomes that matter.</span>
           </p>
         </div>
       </div>
@@ -251,6 +251,7 @@
       </div>
     </footer>
 
+    <script src="/js/site-content.js"></script>
     <script>
       (function() {
         var header = document.querySelector(".site-header");

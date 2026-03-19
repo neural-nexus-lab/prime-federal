@@ -16,7 +16,7 @@
     />
     <link rel="stylesheet" href="../css/prime.css" />
   </head>
-  <body data-page="trustedai">
+  <body data-page="trustedai" data-content-section="trusted_ai">
     <div class="header-stripe"></div>
     <header class="site-header" id="top">
       <div class="shell header-row">
@@ -56,18 +56,18 @@
       <section class="hero hero--light hero--tight-top" id="overview">
         <div class="shell hero-grid">
           <div class="hero-copy">
-            <div class="eyebrow">Mission-Ready AI Starts With Trust</div>
-            <h1>Trusted AI.<br/><em>Proven,</em> Not Promised.</h1>
-            <p>
+            <div class="eyebrow" data-content-text="eyebrow">Mission-Ready AI Starts With Trust</div>
+            <h1 data-content-html="hero_heading">Trusted AI.<br/><em>Proven,</em> Not Promised.</h1>
+            <p data-content-text="body_p1">
               Trust is not automatic. It begins with our very first discussion. It must be earned through security, safety, transparency, and human accountability. PRIME Federal Solutions has codified 13 commitments that define how AI should operate in federal missions — not in theory, but at the infrastructure and agent-system level where execution happens.
             </p>
-            <p>
+            <p data-content-text="body_p2">
               We are proudly Veteran-owned, mission-minded, and solution-ready. There are no compromises in this pursuit of trust.
             </p>
 
             <div class="hero-cta">
-              <a class="button button-primary" href="#manifesto">Review the Manifesto</a>
-              <a class="button button-secondary" href="mailto:hpadilla@primefederalsolutions.com">Contact PRIME</a>
+              <a class="button button-primary" href="#manifesto" data-content-text="cta_primary">Review the Manifesto</a>
+              <a class="button button-secondary" href="mailto:hpadilla@primefederalsolutions.com" data-content-text="cta_secondary">Contact PRIME</a>
             </div>
 
             <div class="hero-notes">
@@ -322,6 +322,7 @@
       </div>
     </footer>
 
+    <script src="/js/site-content.js"></script>
     <script>
       (function() {
         var principles = [

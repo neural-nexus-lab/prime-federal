@@ -16,7 +16,7 @@
     />
     <link rel="stylesheet" href="css/prime.css" />
   </head>
-  <body data-page="about">
+  <body data-page="about" data-content-section="about">
     <div class="header-stripe"></div>
     <header class="site-header" id="top">
       <div class="shell header-row">
@@ -57,16 +57,16 @@
         <div class="hero-grid-bg"></div>
         <div class="shell hero-inner">
           <div class="hero-copy">
-            <div class="eyebrow" style="background:rgba(255,255,255,0.1); color:rgba(255,255,255,0.85);">
+            <div class="eyebrow" style="background:rgba(255,255,255,0.1); color:rgba(255,255,255,0.85);" data-content-text="eyebrow">
               Veteran-Owned · Mission-Driven · Solution-Proven
             </div>
-            <h1>Veteran-Owned.<br/><em>Mission-Driven.</em> Solution-Proven.</h1>
-            <p>
+            <h1 data-content-html="hero_heading">Veteran-Owned.<br/><em>Mission-Driven.</em> Solution-Proven.</h1>
+            <p data-content-text="body">
               PRIME Federal Solutions was founded on a simple belief: the tech is the easy part. What matters is partnership, integrity, and delivery that earns trust. We are SBA-certified Service-Disabled Veteran-Owned Small Business (SDVOSB), and we've been delivering AI and federal technology solutions since 2020 — before the GenAI hype. We don't just sell tech; we solve with it. We know how to SERVE.
             </p>
             <div class="hero-cta" style="margin-top:1.5rem;">
-              <a class="button button-red" href="contact.html">Get in Touch</a>
-              <a class="button" style="background:rgba(255,255,255,0.1); border-color:rgba(255,255,255,0.2); color:#fff;" href="trustedai/index.html">Trusted AI Manifesto</a>
+              <a class="button button-red" href="contact.html" data-content-text="cta_primary">Get in Touch</a>
+              <a class="button" style="background:rgba(255,255,255,0.1); border-color:rgba(255,255,255,0.2); color:#fff;" href="trustedai/index.html" data-content-text="cta_secondary">Trusted AI Manifesto</a>
             </div>
           </div>
 
@@ -268,6 +268,7 @@
       </div>
     </footer>
 
+    <script src="/js/site-content.js"></script>
     <script>
       (function() {
         var header = document.querySelector(".site-header");

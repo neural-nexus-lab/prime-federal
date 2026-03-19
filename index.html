@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="css/prime.css" />
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
-  <body data-page="home">
+  <body data-page="home" data-content-section="home">
     <div class="header-stripe"></div>
     <header class="site-header" id="top">
       <div class="shell header-row">
@@ -31,7 +31,7 @@
               <strong>PRIME Federal Solutions</strong>
               <span class="brand-sdvosb-inline">SDVOSB</span>
             </div>
-            <span class="brand-tagline">Veteran-Owned · AI &amp; Cyber Solutions</span>
+            <span class="brand-tagline" data-content-text="site_tagline">Veteran-Owned · AI &amp; Cyber Solutions</span>
           </div>
         </a>
 
@@ -58,23 +58,23 @@
         <div class="hero-grid-bg"></div>
         <div class="shell hero-inner">
           <div class="hero-copy">
-            <div class="eyebrow" style="background:rgba(255,255,255,0.1); color:rgba(255,255,255,0.85);">
+            <div class="eyebrow" style="background:rgba(255,255,255,0.1); color:rgba(255,255,255,0.85);" data-content-text="eyebrow">
               Veteran-Owned · Mission-Minded · Solution-Ready
             </div>
-            <h1>Partner for<br/><em>Innovative</em> Federal Solutions</h1>
-            <p>
+            <h1 data-content-html="hero_heading">Partner for<br/><em>Innovative</em> Federal Solutions</h1>
+            <p data-content-text="hero_p1">
               We build and certify AI systems that strengthen organizations, empower people, and protect the public good — not only through frameworks, but at the AI infrastructure and agent-system level where execution actually happens.
             </p>
-            <p>
+            <p data-content-text="hero_p2">
               We don't just sell tech. We solve with it. We've been delivering AI solutions since 2020 — before the hype cycle. Let us gain your trust and we will flourish together.
             </p>
 
             <div class="hero-cta">
-              <a class="button button-red" href="contact.html">Request AI Readiness Assessment</a>
-              <a class="button" style="background:rgba(255,255,255,0.1); border-color:rgba(255,255,255,0.2); color:#fff;" href="federal-solutions.html">Our Capabilities</a>
+              <a class="button button-red" href="contact.html" data-content-text="cta_primary">Request AI Readiness Assessment</a>
+              <a class="button" style="background:rgba(255,255,255,0.1); border-color:rgba(255,255,255,0.2); color:#fff;" href="federal-solutions.html" data-content-text="cta_secondary">Our Capabilities</a>
             </div>
 
-            <div class="hero-proof">
+            <div class="hero-proof" data-content-list="proof_items" data-content-item-class="proof-item" data-content-item-tag="div">
               <div class="proof-item">SBA-Certified SDVOSB</div>
               <div class="proof-item">AI delivery since 2020</div>
               <div class="proof-item">Federal &amp; Commercial</div>
@@ -116,20 +116,20 @@
 
             <div class="stat-cards">
               <div class="hero-stat">
-                <strong>3+</strong>
-                <span>Years delivering production AI</span>
+                <strong data-content-text="stat1_number">3+</strong>
+                <span data-content-text="stat1_label">Years delivering production AI</span>
               </div>
               <div class="hero-stat">
-                <strong>8</strong>
-                <span>Business domains assessed</span>
+                <strong data-content-text="stat2_number">8</strong>
+                <span data-content-text="stat2_label">Business domains assessed</span>
               </div>
               <div class="hero-stat">
-                <strong>13</strong>
-                <span>Trusted AI commitments</span>
+                <strong data-content-text="stat3_number">13</strong>
+                <span data-content-text="stat3_label">Trusted AI commitments</span>
               </div>
               <div class="hero-stat">
-                <strong>0</strong>
-                <span>Compromises on trust</span>
+                <strong data-content-text="stat4_number">0</strong>
+                <span data-content-text="stat4_label">Compromises on trust</span>
               </div>
             </div>
           </aside>
@@ -138,11 +138,11 @@
 
       <div class="alert-banner">
         <div class="shell alert-inner">
-          <span class="alert-tag">Intelligence Brief</span>
+          <span class="alert-tag" data-content-text="alert_tag">Intelligence Brief</span>
           <p class="alert-text">
-            <strong>"Only 13% say they are fully ready to capture AI's potential."</strong>
-            <cite> — Cisco, AI Readiness Index 2024</cite>
-            We've been helping organizations close that readiness gap since 2020. Your mission deserves better than hype.
+            <strong data-content-text="alert_quote">"Only 13% say they are fully ready to capture AI's potential."</strong>
+            <cite data-content-text="alert_cite"> — Cisco, AI Readiness Index 2024</cite>
+            <span data-content-text="alert_cta">We've been helping organizations close that readiness gap since 2020. Your mission deserves better than hype.</span>
           </p>
         </div>
       </div>
@@ -413,6 +413,7 @@
       </div>
     </footer>
 
+    <script src="/js/site-content.js"></script>
     <script>
       (function() {
         var header = document.querySelector(".site-header");

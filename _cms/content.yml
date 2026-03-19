@@ -1,41 +1,66 @@
 # Editable site content — managed via /admin
-# Agents can also edit this file directly.
+# One file, grouped by page for a saner Decap editor.
 
-# ── Global ──────────────────────────────────────────────
-site_tagline: "Veteran-Owned · AI & Cyber Solutions"
+home:
+  site_tagline: "Veteran-Owned · AI & Cyber Solutions"
+  eyebrow: "Veteran-Owned · Mission-Minded · Solution-Ready"
+  hero_heading: "Partner for <em>Innovative</em> Federal Solutions"
+  hero_p1: "We build and certify AI systems that strengthen organizations, empower people, and protect the public good — not only through frameworks, but at the AI infrastructure and agent-system level where execution actually happens."
+  hero_p2: "We don't just sell tech. We solve with it. We've been delivering AI solutions since 2020 — before the hype cycle. Let us gain your trust and we will flourish together."
+  cta_primary: "Request AI Readiness Assessment"
+  cta_secondary: "Our Capabilities"
+  proof_items: "SBA-Certified SDVOSB, AI delivery since 2020, Federal & Commercial, Trusted AI Certified, Multi-agency experience"
+  stat1_number: "3+"
+  stat1_label: "Years delivering production AI"
+  stat2_number: "8"
+  stat2_label: "Business domains assessed"
+  stat3_number: "13"
+  stat3_label: "Trusted AI commitments"
+  stat4_number: "0"
+  stat4_label: "Compromises on trust"
+  alert_tag: "Intelligence Brief"
+  alert_quote: '"Only 13% say they are fully ready to capture AI''s potential."'
+  alert_cite: "— Cisco, AI Readiness Index 2024"
+  alert_cta: "We've been helping organizations close that readiness gap since 2020. Your mission deserves better than hype."
 
-# ── Home page ───────────────────────────────────────────
-home_eyebrow: "Veteran-Owned · Mission-Minded · Solution-Ready"
-home_hero_heading: "Partner for <em>Innovative</em> Federal Solutions"
-home_hero_p1: "We build and certify AI systems that strengthen organizations, empower people, and protect the public good — not only through frameworks, but at the AI infrastructure and agent-system level where execution actually happens."
-home_hero_p2: "We don't just sell tech. We solve with it. We've been delivering AI solutions since 2020 — before the hype cycle. Let us gain your trust and we will flourish together."
-home_cta_primary: "Request AI Readiness Assessment"
-home_cta_secondary: "Our Capabilities"
+about:
+  eyebrow: "Veteran-Owned · Mission-Driven · Solution-Proven"
+  hero_heading: "Veteran-Owned.<br/><em>Mission-Driven.</em> Solution-Proven."
+  body: "PRIME Federal Solutions was founded on a simple belief: the tech is the easy part. What matters is partnership, integrity, and delivery that earns trust. We are SBA-certified Service-Disabled Veteran-Owned Small Business (SDVOSB), and we've been delivering AI and federal technology solutions since 2020 — before the GenAI hype. We don't just sell tech; we solve with it. We know how to SERVE."
+  cta_primary: "Get in Touch"
+  cta_secondary: "Trusted AI Manifesto"
 
-# Proof badges (comma-separated)
-home_proof_items: "SBA-Certified SDVOSB, AI delivery since 2020, Federal & Commercial, Trusted AI Certified, Multi-agency experience"
+trusted_ai:
+  eyebrow: "Mission-Ready AI Starts With Trust"
+  hero_heading: "Trusted AI.<br/><em>Proven,</em> Not Promised."
+  body_p1: "Trust is not automatic. It begins with our very first discussion. It must be earned through security, safety, transparency, and human accountability. PRIME Federal Solutions has codified 13 commitments that define how AI should operate in federal missions — not in theory, but at the infrastructure and agent-system level where execution happens."
+  body_p2: "We are proudly Veteran-owned, mission-minded, and solution-ready. There are no compromises in this pursuit of trust."
+  cta_primary: "Review the Manifesto"
+  cta_secondary: "Contact PRIME"
 
-# Stats
-home_stat1_number: "3+"
-home_stat1_label: "Years delivering production AI"
-home_stat2_number: "8"
-home_stat2_label: "Business domains assessed"
-home_stat3_number: "13"
-home_stat3_label: "Trusted AI commitments"
-home_stat4_number: "0"
-home_stat4_label: "Compromises on trust"
+federal_solutions:
+  eyebrow: "Federal Mission · Compliance-Ready · SDVOSB"
+  hero_heading: "Built for the<br/><em>Federal</em> Mission."
+  body: "PRIME delivers AI, cloud, and software solutions where mission and compliance meet. We are SBA-certified SDVOSB, aligned to FedRAMP, CMMC, FISMA, NIST 800-53, Section 508, and DoW AI Principles. From DoW and VA to DHS, civilian agencies, and the IC — we build and certify systems that earn trust at the infrastructure and agent level."
+  cta_primary: "Request AI Readiness Assessment"
+  cta_secondary: "Trusted AI Manifesto"
+  proof_items: "FedRAMP Aligned, CMMC, FISMA · NIST 800-53, Section 508, ATO-Ready"
 
-# Alert banner
-home_alert_tag: "Intelligence Brief"
-home_alert_quote: "\"Only 13% say they are fully ready to capture AI's potential.\""
-home_alert_cite: "— Cisco, AI Readiness Index 2024"
-home_alert_cta: "We've been helping organizations close that readiness gap since 2020. Your mission deserves better than hype."
+commercial_solutions:
+  eyebrow: "The GenAI ROI Problem"
+  hero_heading: "Most Organizations Still Aren't Ready for AI. We Help Fix That."
+  body: "Cisco found that only 13% of organizations say they are fully ready to capture AI's potential. PRIME has been delivering AI solutions since 2020 — before the hype cycle. We focus on operational readiness, measurable outcomes, and systems that work in the real world."
+  cta_primary: "Free AI Readiness Assessment"
+  cta_secondary: "How We Deliver ROI"
+  alert_tag: "Research"
+  alert_quote: '"Only 13% say they are fully ready to capture AI''s potential."'
+  alert_cite: "— Cisco, AI Readiness Index 2024"
+  alert_body: "We've been helping organizations close that readiness gap since 2020. Let us earn your trust, and we'll deliver outcomes that matter."
 
-# ── About page ──────────────────────────────────────────
-about_heading: "About PRIME Federal Solutions"
-about_body: "PRIME Federal Solutions is an SBA-certified Service-Disabled Veteran-Owned Small Business (SDVOSB) delivering AI, cloud, and software solutions for federal agencies since 2020."
-
-# ── Contact page ────────────────────────────────────────
-contact_heading: "Get in Touch"
-contact_subtext: "Ready to talk? We'd love to learn about your mission and explore how we can help."
-contact_email: "info@primefederalsolutions.com"
+contact:
+  eyebrow: "Get in Touch"
+  hero_heading: "Reach Out When Your Team Is Ready."
+  body: "We are Veteran-owned, mission-minded, and solution-ready. Whether you need a 3-minute AI readiness assessment, a partnership conversation, or a general inquiry — we're here. Send it. We are ready to serve."
+  cta_primary: "Request Assessment"
+  cta_secondary: "Email PRIME"
+  email: "info@primefederalsolutions.com"

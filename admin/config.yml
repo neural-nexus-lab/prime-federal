@@ -17,28 +17,90 @@ collections:
         name: site_content
         file: _cms/content.yml
         fields:
-          - { label: Site Tagline, name: site_tagline, widget: string }
-          - { label: Eyebrow Text, name: home_eyebrow, widget: string }
-          - { label: Hero Heading (HTML ok), name: home_hero_heading, widget: string }
-          - { label: Hero Paragraph 1, name: home_hero_p1, widget: text }
-          - { label: Hero Paragraph 2, name: home_hero_p2, widget: text }
-          - { label: Primary CTA Button, name: home_cta_primary, widget: string }
-          - { label: Secondary CTA Button, name: home_cta_secondary, widget: string }
-          - { label: "Badges (comma-separated)", name: home_proof_items, widget: text }
-          - { label: Stat 1 Number, name: home_stat1_number, widget: string }
-          - { label: Stat 1 Label, name: home_stat1_label, widget: string }
-          - { label: Stat 2 Number, name: home_stat2_number, widget: string }
-          - { label: Stat 2 Label, name: home_stat2_label, widget: string }
-          - { label: Stat 3 Number, name: home_stat3_number, widget: string }
-          - { label: Stat 3 Label, name: home_stat3_label, widget: string }
-          - { label: Stat 4 Number, name: home_stat4_number, widget: string }
-          - { label: Stat 4 Label, name: home_stat4_label, widget: string }
-          - { label: Alert Tag, name: home_alert_tag, widget: string }
-          - { label: Alert Quote, name: home_alert_quote, widget: string }
-          - { label: Alert Citation, name: home_alert_cite, widget: string }
-          - { label: Alert CTA Text, name: home_alert_cta, widget: text }
-          - { label: About Heading, name: about_heading, widget: string }
-          - { label: About Body Text, name: about_body, widget: text }
-          - { label: Contact Heading, name: contact_heading, widget: string }
-          - { label: Contact Subtext, name: contact_subtext, widget: text }
-          - { label: Contact Email, name: contact_email, widget: string }
+          - label: Home
+            name: home
+            widget: object
+            collapsed: false
+            fields:
+              - { label: Site Tagline, name: site_tagline, widget: string }
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Hero Heading (HTML ok), name: hero_heading, widget: string }
+              - { label: Hero Paragraph 1, name: hero_p1, widget: text }
+              - { label: Hero Paragraph 2, name: hero_p2, widget: text }
+              - { label: Primary CTA, name: cta_primary, widget: string }
+              - { label: Secondary CTA, name: cta_secondary, widget: string }
+              - { label: Proof Items (comma-separated), name: proof_items, widget: text }
+              - { label: Stat 1 Number, name: stat1_number, widget: string }
+              - { label: Stat 1 Label, name: stat1_label, widget: string }
+              - { label: Stat 2 Number, name: stat2_number, widget: string }
+              - { label: Stat 2 Label, name: stat2_label, widget: string }
+              - { label: Stat 3 Number, name: stat3_number, widget: string }
+              - { label: Stat 3 Label, name: stat3_label, widget: string }
+              - { label: Stat 4 Number, name: stat4_number, widget: string }
+              - { label: Stat 4 Label, name: stat4_label, widget: string }
+              - { label: Alert Tag, name: alert_tag, widget: string }
+              - { label: Alert Quote, name: alert_quote, widget: string }
+              - { label: Alert Citation, name: alert_cite, widget: string }
+              - { label: Alert CTA Text, name: alert_cta, widget: text }
+
+          - label: About
+            name: about
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Hero Heading (HTML ok), name: hero_heading, widget: string }
+              - { label: Body, name: body, widget: text }
+              - { label: Primary CTA, name: cta_primary, widget: string }
+              - { label: Secondary CTA, name: cta_secondary, widget: string }
+
+          - label: Trusted AI
+            name: trusted_ai
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Hero Heading (HTML ok), name: hero_heading, widget: string }
+              - { label: Body Paragraph 1, name: body_p1, widget: text }
+              - { label: Body Paragraph 2, name: body_p2, widget: text }
+              - { label: Primary CTA, name: cta_primary, widget: string }
+              - { label: Secondary CTA, name: cta_secondary, widget: string }
+
+          - label: Federal Solutions
+            name: federal_solutions
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Hero Heading (HTML ok), name: hero_heading, widget: string }
+              - { label: Body, name: body, widget: text }
+              - { label: Primary CTA, name: cta_primary, widget: string }
+              - { label: Secondary CTA, name: cta_secondary, widget: string }
+              - { label: Proof Items (comma-separated), name: proof_items, widget: text }
+
+          - label: Commercial Solutions
+            name: commercial_solutions
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Hero Heading, name: hero_heading, widget: string }
+              - { label: Body, name: body, widget: text }
+              - { label: Primary CTA, name: cta_primary, widget: string }
+              - { label: Secondary CTA, name: cta_secondary, widget: string }
+              - { label: Alert Tag, name: alert_tag, widget: string }
+              - { label: Alert Quote, name: alert_quote, widget: string }
+              - { label: Alert Citation, name: alert_cite, widget: string }
+              - { label: Alert Body, name: alert_body, widget: text }
+
+          - label: Contact
+            name: contact
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Eyebrow, name: eyebrow, widget: string }
+              - { label: Hero Heading, name: hero_heading, widget: string }
+              - { label: Body, name: body, widget: text }
+              - { label: Primary CTA, name: cta_primary, widget: string }
+              - { label: Secondary CTA, name: cta_secondary, widget: string }
+              - { label: Contact Email, name: email, widget: string }

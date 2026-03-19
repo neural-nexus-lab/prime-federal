@@ -1,0 +1,41 @@
+# Editable site content — managed via /admin
+# Agents can also edit this file directly.
+
+# ── Global ──────────────────────────────────────────────
+site_tagline: "Veteran-Owned · AI & Cyber Solutions"
+
+# ── Home page ───────────────────────────────────────────
+home_eyebrow: "Veteran-Owned · Mission-Minded · Solution-Ready"
+home_hero_heading: "Partner for <em>Innovative</em> Federal Solutions"
+home_hero_p1: "We build and certify AI systems that strengthen organizations, empower people, and protect the public good — not only through frameworks, but at the AI infrastructure and agent-system level where execution actually happens."
+home_hero_p2: "We don't just sell tech. We solve with it. We've been delivering AI solutions since 2020 — before the hype cycle. Let us gain your trust and we will flourish together."
+home_cta_primary: "Request AI Readiness Assessment"
+home_cta_secondary: "Our Capabilities"
+
+# Proof badges (comma-separated)
+home_proof_items: "SBA-Certified SDVOSB, AI delivery since 2020, Federal & Commercial, Trusted AI Certified, Multi-agency experience"
+
+# Stats
+home_stat1_number: "3+"
+home_stat1_label: "Years delivering production AI"
+home_stat2_number: "8"
+home_stat2_label: "Business domains assessed"
+home_stat3_number: "13"
+home_stat3_label: "Trusted AI commitments"
+home_stat4_number: "0"
+home_stat4_label: "Compromises on trust"
+
+# Alert banner
+home_alert_tag: "Intelligence Brief"
+home_alert_quote: "\"Only 13% say they are fully ready to capture AI's potential.\""
+home_alert_cite: "— Cisco, AI Readiness Index 2024"
+home_alert_cta: "We've been helping organizations close that readiness gap since 2020. Your mission deserves better than hype."
+
+# ── About page ──────────────────────────────────────────
+about_heading: "About PRIME Federal Solutions"
+about_body: "PRIME Federal Solutions is an SBA-certified Service-Disabled Veteran-Owned Small Business (SDVOSB) delivering AI, cloud, and software solutions for federal agencies since 2020."
+
+# ── Contact page ────────────────────────────────────────
+contact_heading: "Get in Touch"
+contact_subtext: "Ready to talk? We'd love to learn about your mission and explore how we can help."
+contact_email: "info@primefederalsolutions.com"

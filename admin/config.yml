@@ -1,0 +1,84 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: assets
+public_folder: /assets
+
+site_url: https://prime-federal.netlify.app
+display_url: https://prime-federal.netlify.app
+
+collections:
+  - name: site_content
+    label: Site Content
+    files:
+      - label: Homepage
+        name: home
+        file: _cms/content.yml
+        fields:
+          - label: Global
+            name: global
+            widget: object
+            collapsed: false
+            fields:
+              - { label: Site Tagline, name: site_tagline, widget: string }
+
+          - label: Hero Section
+            name: hero
+            widget: object
+            collapsed: false
+            fields:
+              - { label: Eyebrow Text, name: home_eyebrow, widget: string }
+              - { label: Hero Heading (HTML ok), name: home_hero_heading, widget: string }
+              - { label: Hero Paragraph 1, name: home_hero_p1, widget: text }
+              - { label: Hero Paragraph 2, name: home_hero_p2, widget: text }
+              - { label: Primary CTA Button, name: home_cta_primary, widget: string }
+              - { label: Secondary CTA Button, name: home_cta_secondary, widget: string }
+
+          - label: Proof Badges
+            name: proof
+            widget: object
+            collapsed: true
+            fields:
+              - { label: "Badges (comma-separated)", name: home_proof_items, widget: text }
+
+          - label: Stats
+            name: stats
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Stat 1 Number, name: home_stat1_number, widget: string }
+              - { label: Stat 1 Label, name: home_stat1_label, widget: string }
+              - { label: Stat 2 Number, name: home_stat2_number, widget: string }
+              - { label: Stat 2 Label, name: home_stat2_label, widget: string }
+              - { label: Stat 3 Number, name: home_stat3_number, widget: string }
+              - { label: Stat 3 Label, name: home_stat3_label, widget: string }
+              - { label: Stat 4 Number, name: home_stat4_number, widget: string }
+              - { label: Stat 4 Label, name: home_stat4_label, widget: string }
+
+          - label: Alert Banner
+            name: alert
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Tag, name: home_alert_tag, widget: string }
+              - { label: Quote, name: home_alert_quote, widget: string }
+              - { label: Citation, name: home_alert_cite, widget: string }
+              - { label: CTA Text, name: home_alert_cta, widget: text }
+
+          - label: About Page
+            name: about
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Heading, name: about_heading, widget: string }
+              - { label: Body Text, name: about_body, widget: text }
+
+          - label: Contact Page
+            name: contact
+            widget: object
+            collapsed: true
+            fields:
+              - { label: Heading, name: contact_heading, widget: string }
+              - { label: Subtext, name: contact_subtext, widget: text }
+              - { label: Email, name: contact_email, widget: string }

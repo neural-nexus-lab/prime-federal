@@ -15,6 +15,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/prime.css" />
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body data-page="home">
     <div class="header-stripe"></div>
@@ -424,6 +425,16 @@
           });
         }
       })();
+    </script>
+    <script>
+      // Netlify Identity redirect helper
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => { document.location.href = "/admin/"; });
+          }
+        });
+      }
     </script>
   </body>
 </html>

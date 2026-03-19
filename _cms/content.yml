@@ -2,7 +2,7 @@ home:
   proof_items: SBA-Certified SDVOSB, AI delivery since 2020, Federal & Commercial,
     Trusted AI Certified, Multi-agency experience
   cta_secondary: Our Capabilities
-  hero_p1: test We build and certify AI systems that strengthen organizations,
+  hero_p1: We build and certify trusted AI systems that strengthen organizations,
     empower people, and protect the public good — not only through frameworks,
     but at the AI infrastructure and agent-system level where execution actually
     happens.
@@ -13,7 +13,7 @@ home:
   stat3_number: "13"
   eyebrow: Veteran-Owned · Mission-Minded · Solution-Ready
   stat2_number: "8"
-  stat1_number: 3+
+  stat1_number: 5+
   alert_cta: We've been helping organizations close that readiness gap since 2020.
     Your mission deserves better than hype.
   stat1_label: Years delivering production AI
@@ -43,8 +43,9 @@ trusted_ai:
   body_p1: Trust is not automatic. It begins with our very first discussion. It
     must be earned through security, safety, transparency, and human
     accountability. PRIME Federal Solutions has codified 13 commitments that
-    define how AI should operate in federal missions — not in theory, but at the
-    infrastructure and agent-system level where execution happens.
+    define how AI should operate in the real world — not in theory, or high
+    level governance but at the infrastructure and agent-system level where
+    execution happens at machine speed.
   body_p2: We are proudly Veteran-owned, mission-minded, and solution-ready. There
     are no compromises in this pursuit of trust.
   cta_primary: Review the Manifesto

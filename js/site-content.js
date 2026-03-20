@@ -47,6 +47,41 @@
     return value.slice(1, -1).replace(/''/g, "'");
   }
 
+  function parseQuotedScalar(lines, startIndex, initialValue, indent, quoteChar) {
+    var parts = [initialValue.replace(/^\s*/, "")];
+    var index = startIndex + 1;
+
+    while (index < lines.length) {
+      var currentLine = lines[index];
+      if (!currentLine.trim()) {
+        parts.push(quoteChar === '"' ? "\\n" : "");
+        index += 1;
+        continue;
+      }
+
+      if (countIndent(currentLine) <= indent) {
+        break;
+      }
+
+      parts.push(currentLine.slice(indent + 2));
+
+      var joined = parts.join(" ");
+      if (joined.charAt(joined.length - 1) === quoteChar) {
+        return {
+          value: quoteChar === '"' ? parseDoubleQuoted(joined) : parseSingleQuoted(joined),
+          nextIndex: index + 1
+        };
+      }
+
+      index += 1;
+    }
+
+    return {
+      value: parts.join(" "),
+      nextIndex: index
+    };
+  }
+
   function foldBlock(lines) {
     return lines.reduce(function(result, line, index) {
       if (index === 0) {
@@ -105,18 +140,26 @@
       return parseBlockScalar(lines, lineIndex + 1, indent + 2, trimmed.charAt(0) === ">");
     }
 
-    if (trimmed.charAt(0) === "\"" && trimmed.charAt(trimmed.length - 1) === "\"") {
-      return {
-        value: parseDoubleQuoted(trimmed),
-        nextIndex: lineIndex + 1
-      };
+    if (trimmed.charAt(0) === "\"") {
+      if (trimmed.charAt(trimmed.length - 1) === "\"" && trimmed.length > 1) {
+        return {
+          value: parseDoubleQuoted(trimmed),
+          nextIndex: lineIndex + 1
+        };
+      }
+
+      return parseQuotedScalar(lines, lineIndex, value, indent, '"');
     }
 
-    if (trimmed.charAt(0) === "'" && trimmed.charAt(trimmed.length - 1) === "'") {
-      return {
-        value: parseSingleQuoted(trimmed),
-        nextIndex: lineIndex + 1
-      };
+    if (trimmed.charAt(0) === "'") {
+      if (trimmed.charAt(trimmed.length - 1) === "'" && trimmed.length > 1) {
+        return {
+          value: parseSingleQuoted(trimmed),
+          nextIndex: lineIndex + 1
+        };
+      }
+
+      return parseQuotedScalar(lines, lineIndex, value, indent, "'");
     }
 
     return {

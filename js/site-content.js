@@ -126,6 +126,35 @@
     };
   }
 
+  function parsePlainScalar(lines, lineIndex, value, indent) {
+    var parts = [value.replace(/^\s*/, "")];
+    var index = lineIndex + 1;
+
+    while (index < lines.length) {
+      var currentLine = lines[index];
+      if (!currentLine.trim()) {
+        break;
+      }
+
+      if (countIndent(currentLine) <= indent) {
+        break;
+      }
+
+      if (/^\s*#/.test(currentLine)) {
+        index += 1;
+        continue;
+      }
+
+      parts.push(currentLine.slice(indent + 2));
+      index += 1;
+    }
+
+    return {
+      value: parts.join(" ").trim(),
+      nextIndex: index
+    };
+  }
+
   function parseScalar(lines, lineIndex, value, indent) {
     var trimmed = value.replace(/^\s*/, "");
 
@@ -162,10 +191,7 @@
       return parseQuotedScalar(lines, lineIndex, value, indent, "'");
     }
 
-    return {
-      value: trimmed,
-      nextIndex: lineIndex + 1
-    };
+    return parsePlainScalar(lines, lineIndex, value, indent);
   }
 
   function parseContentYaml(yamlText) {
